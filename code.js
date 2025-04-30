@@ -25,8 +25,121 @@
 // console.log(divide(5, 4));
 
 // let num = 2;
-let marks = 56;
+// let marks = 56;
 
-const grade = marks > 80 ? 'A' : 'pass'
+// const grade = marks > 80 ? 'A' : 'pass'
 
-console.log(grade);
+// console.log(grade);
+
+// let moneyInWallet = 1;
+
+// let priceOfCandy = 2;
+
+// canBuyCandy = moneyInWallet >= priceOfCandy;
+
+// console.log(canBuyCandy);
+
+// if (canBuyCandy) 
+//     console.log('Enjoy your sweets');
+// else 
+//     console.log('come back next time');
+
+
+// const numbers = [1,2,3,4,5,6,7];
+
+
+// for (let i = 0; i < numbers.length; i++) {
+//     console.log(numbers[i]);
+// }
+
+// const citizen = {
+//     name: 'Munene',
+//     age: 45,
+//     nationality: 'kenyan'
+// }
+
+// for (let key in citizen){
+//     console.log(citizen[key]);
+// }
+
+// const numbers = [1,2,3,4,5,6,7];
+
+// for (let element of numbers){
+//     console.log(element);
+// }
+
+// let i = 0;
+
+// do{
+//     if(i === 5){
+//         break;
+//     }
+//     console.log(i);
+//     i++
+// }while (i < 10)
+
+// while (i < 10){
+//     i++;
+//     if (i % 2 === 0){
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+// do {
+//     i++;
+//     if (i % 2 === 0){
+//         continue;
+//     }
+//     console.log(i);
+// }while(i < 20);
+
+// function maxNum (a, b){
+//     if( a < b){
+//         console.log(b);
+//     }else if(b < a){
+//         console.log(a);
+//     }else{
+//         console.log('numbers are equal');
+//     }
+// }
+
+// maxNum(5, 27)
+
+// function fizzBuzz(num) {
+//         if(num % 3 === 0 && num % 5 === 0)
+//             return 'FizzBuzz';
+//         else if(num % 3 === 0)
+//             return 'Fizz';
+//         else if(num % 5 === 0)
+//             return 'Buzz';
+//         else
+//             return num;
+            
+// }
+
+// console.log(fizzBuzz(20));
+
+
+// function evenNums(arr) {
+//     for (const element of arr) {
+//         if (element % 2 === 0) {
+//             console.log(element);        
+//         }
+//     }
+// }
+
+// evenNums([1,2,3,4,5,6])
+// function oddNums(arr) {
+//     for (const element of arr) {
+//         if (element % 2 === 0) {
+//             continue
+//         }
+//         console.log(element);        
+
+//     }
+// }
+
+// oddNums([1,2,3,4,5,6])
+
+
