@@ -142,4 +142,25 @@
 
 // oddNums([1,2,3,4,5,6])
 
+// const car = {
+//     name: 'mercedes',
+//     engine: '6 ltr V8',
+//     transmission: '8-speed automatic',
+//     sound: function() {
+//         console.log('vrooom vroom');
+//     }
+// }
+
+// function getCar(name, engine, transmission) {
+//     return {
+//         name,
+//         engine,
+//         transmission
+//     }
+// }
+
+// const anotherCar = getCar('ferrari', '4ltr V12', 'dual-clutch')
+
+// console.log(anotherCar);
+
 
