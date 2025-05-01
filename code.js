@@ -164,22 +164,31 @@
 // console.log(anotherCar);
 
 
-function Car(name, engine, transmission) {
-    // this = {};
+// function Car(name, engine, transmission) {
+//     // this = {};
 
-    this.name = name;
-    this.engine = engine;
-    this.transmission = transmission;
-}
+//     this.name = name;
+//     this.engine = engine;
+//     this.transmission = transmission;
+// }
 
-// return this;(implicitly)
+// // return this;(implicitly)
 
-const anotherCar = new Car("toyota",'3 ltr V6',"6-speed auto")
+// const anotherCar = new Car("toyota",'3 ltr V6',"6-speed auto")
 
 
-console.log(anotherCar);
+// console.log(anotherCar);
 
-anotherCar.drivetrain = 'AWD';
+// anotherCar.drivetrain = 'AWD';
 
-console.log(anotherCar)
+// console.log(anotherCar)
 
+
+let a = { value: 20}
+
+let b = a
+
+a.value = 100
+
+console.log(a)
+console.log(b)
