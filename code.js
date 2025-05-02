@@ -184,11 +184,37 @@
 // console.log(anotherCar)
 
 
-let a = { value: 20}
+// let a = { value: 20}
 
-let b = a
+// let b = a
 
-a.value = 100
+// a.value = 100
 
-console.log(a)
-console.log(b)
+// console.log(a)
+// console.log(b)
+
+const cat = {
+    name: 'softie',
+    age: 5,
+    furColor: 'white-brown'
+}
+
+// for (const key in cat){
+//     console.log(cat[key])
+// }
+
+// const keys = Object.keys(cat)
+
+// console.log(keys[0])
+
+// const values = Object.values(cat)
+
+// console.log(values)
+
+// const entries = Object.entries(cat)
+
+// console.log(entries)
+
+for(const key of Object.keys(cat)){
+    console.log(key)
+}
