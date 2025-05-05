@@ -252,3 +252,9 @@ const cat = {
 // let joinedWord = splitWord.join(' ');
 
 // console.log(joinedWord)
+
+// let firstname = 'Ryan';
+
+// let secondName = 'Munene';
+
+// console.log(`${firstname} ${secondName}`)
