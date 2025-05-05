@@ -219,15 +219,21 @@ const cat = {
 //     console.log(value)
 // }
 
-let a = { value: 5};
+// let a = { value: 5};
 
-let b = {...a};
+// let b = {...a};
 
 // Object.assign (b, a)
 
-console.log(b)
+// console.log(b)
 
-b.value = 20;
+// b.value = 20;
 
-console.log(a)
-console.log(b)
+// console.log(a)
+// console.log(b)
+
+
+
+const randomNum = Math.round(Math.random() * (100 - 1) + 1)
+
+console.log(randomNum)
