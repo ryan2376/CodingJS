@@ -215,6 +215,19 @@ const cat = {
 
 // console.log(entries)
 
-for(const key of Object.keys(cat)){
-    console.log(key)
-}
+// for(const value of Object.keys(cat)){
+//     console.log(value)
+// }
+
+let a = { value: 5};
+
+let b = {...a};
+
+// Object.assign (b, a)
+
+console.log(b)
+
+b.value = 20;
+
+console.log(a)
+console.log(b)
