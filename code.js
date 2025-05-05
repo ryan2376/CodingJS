@@ -234,6 +234,21 @@ const cat = {
 
 
 
-const randomNum = Math.round(Math.random() * (100 - 1) + 1)
+// const randomNum = Math.round(Math.random() * (100 - 1) + 1)
 
-console.log(randomNum)
+// console.log(randomNum)
+
+// let sentence = 'The making of a Software Engineer.'
+
+// let trimmedSentence = sentence.trimEnd();
+
+// console.log(sentence)
+// console.log(trimmedSentence)
+
+// let splitWord = sentence.split(' ');
+
+// console.log(splitWord)
+
+// let joinedWord = splitWord.join(' ');
+
+// console.log(joinedWord)
