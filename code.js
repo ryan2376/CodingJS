@@ -258,3 +258,68 @@ const cat = {
 // let secondName = 'Munene';
 
 // console.log(`${firstname} ${secondName}`)
+
+// const numbers = [20, 50, 70, 100]
+
+// const indexOfThree = numbers.lastIndexOf(30)
+
+// if(indexOfThree === -1){
+//     console.log('cannot find user')
+// }
+
+// console.log(indexOfThree)
+
+// const employees = [
+//     {
+//         id: 1,
+//         name: 'nesh'
+//     },
+//     {
+//         id: 2,
+//         name: 'pesh'
+//     },
+//     {
+//         id: 3,
+//         name: 'nkirote'
+//     }
+// ]
+
+// const employee = employees.find((n) => n.name === 'pesh');
+
+// console.log(employee)
+
+// function addition(num1, num2) {
+//     return num1 + num2
+// }
+
+// console.log(addition(2, 4)) 
+
+// const multiply = (num3, num4) => num3 * num4
+
+
+// console.log(multiply(2,4))
+
+// const numbers = [1,2,3,4,5]
+
+// const popedElement = numbers.pop();
+
+// console.log(popedElement)
+
+// const shiftedElem = numbers.shift()
+
+// console.log(shiftedElem)
+
+// const splicedElem = numbers.splice(1, 2)
+
+// console.log(splicedElem)
+
+const example1 = [1,2,3]
+const example2 = [4,5,6]
+
+const combinedArr = example1.concat(example2)
+
+console.log(combinedArr)
+
+const slicedArr = combinedArr.slice(4, 5)
+
+console.log(slicedArr)
