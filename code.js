@@ -461,7 +461,7 @@ const cat = {
 
 // console.log(updatedEmployees)
 
-const numbers = [2,4,6,8,10]
+// const numbers = [2,4,6,8,10]
 
 // let sum = 0;
 
@@ -471,8 +471,15 @@ const numbers = [2,4,6,8,10]
 
 // console.log(sum)
 
-const sum = numbers.reduce((a, c) => {
-    return a + c;
-}, 0)
+// const sum = numbers.reduce((a, c) => {
+//     return a + c;
+// }, 0)
 
-console.log(sum)
+// console.log(sum)
+
+
+function multiply(multiplier, ...numbers) {
+    return numbers.map(number => number * multiplier);
+}
+
+console.log(multiply(2, 1, 2, 3, 4, 5, 6))
