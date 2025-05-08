@@ -478,8 +478,28 @@ const cat = {
 // console.log(sum)
 
 
-function multiply(multiplier, ...numbers) {
-    return numbers.map(number => number * multiplier);
+// function multiply(multiplier, ...numbers) {
+//     return numbers.map(number => number * multiplier);
+// }
+
+// console.log(multiply(2, 1, 2, 3, 4, 5, 6))
+
+
+const games = {
+    name: 'Hunger games',
+    time: '2 hours',
+    get details(){
+        return `${this.name} is ${this.time}`
+    },
+    set details(value){
+        let parts = value.split(' is ');
+        this.name = parts[0];
+        this.time = parts[1];
+    }
 }
 
-console.log(multiply(2, 1, 2, 3, 4, 5, 6))
+console.log(games.details)
+
+games.details = 'Mad max is 10 hours'
+
+console.log(games.details)
