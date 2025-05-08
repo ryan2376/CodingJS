@@ -417,46 +417,62 @@ const cat = {
 
 // console.log(Devs)
 
+// const numbers = [2,4,6,8,10]
+
+// const squaredNums = numbers.map(num => num * num);
+
+// console.log(squaredNums)
+
+// const chars = ['a', 'b', 'c', 'd']
+
+// const capitalisedChars = chars.map(char => char.toUpperCase());
+
+// console.log(capitalisedChars)
+
+
+// const employees = [
+//     {
+//         id: 1,
+//         name: 'nesh',
+//         role: 'Dev',
+//         email: 'RyanMund@gmail.com'
+//     },
+//     {
+//         id: 2,
+//         name: 'pesh',
+//         role: 'nurse',
+//         email: 'PeshidTund@gmail.com'
+
+//     },
+//     {
+//         id: 3,
+//         name: 'nkirote',
+//         role: 'Dev',
+//         email: 'Nikidend@gmail.com'
+
+//     }
+// ];
+
+// const updatedEmployees = employees.map(employee => ({
+//     ...employee,
+//     email: employee.email.toLowerCase()
+// }
+// ));
+
+// console.log(updatedEmployees)
+
 const numbers = [2,4,6,8,10]
 
-const squaredNums = numbers.map(num => num * num);
+// let sum = 0;
 
-console.log(squaredNums)
+// for(let nums of numbers){
+//     sum += nums
+// }
 
-const chars = ['a', 'b', 'c', 'd']
+// console.log(sum)
 
-const capitalisedChars = chars.map(char => char.toUpperCase());
+const sum = numbers.reduce((a, c) => {
+    return a + c;
+}, 0)
 
-console.log(capitalisedChars)
-
-
-const employees = [
-    {
-        id: 1,
-        name: 'nesh',
-        role: 'Dev',
-        email: 'RyanMund@gmail.com'
-    },
-    {
-        id: 2,
-        name: 'pesh',
-        role: 'nurse',
-        email: 'PeshidTund@gmail.com'
-
-    },
-    {
-        id: 3,
-        name: 'nkirote',
-        role: 'Dev',
-        email: 'Nikidend@gmail.com'
-
-    }
-];
-
-const updatedEmployees = employees.map(employee => ({
-    ...employee,
-    email: employee.email.toLowerCase()
-}
-));
-
-console.log(updatedEmployees)
+console.log(sum)
