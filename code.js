@@ -329,3 +329,12 @@ const cat = {
 
 // console.log(spreadedArr)
 
+const numbers = [1,2,3,4,5]
+
+numbers.forEach((numbers, index) => {
+    console.log(`At index: ${index} ${numbers}`)
+});
+
+// for(let elements of numbers){
+//     console.log(elements)
+// }
