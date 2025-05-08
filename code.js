@@ -485,21 +485,31 @@ const cat = {
 // console.log(multiply(2, 1, 2, 3, 4, 5, 6))
 
 
-const games = {
-    name: 'Hunger games',
-    time: '2 hours',
-    get details(){
-        return `${this.name} is ${this.time}`
-    },
-    set details(value){
-        let parts = value.split(' is ');
-        this.name = parts[0];
-        this.time = parts[1];
-    }
-}
+// const games = {
+//     name: 'Hunger games',
+//     time: '2 hours',
+//     get details(){
+//         return `${this.name} is ${this.time}`
+//     },
+//     set details(value){
+//         if (typeof value !== 'string'){
+//             throw new Error(`Value, ${value} is not a string`);
+            
+//         } 
+//         let parts = value.split(' is ');
+//         this.name = parts[0];
+//         this.time = parts[1];
+//     }
+// }
 
-console.log(games.details)
+// console.log(games.details)
 
-games.details = 'Mad max is 10 hours'
+// games.details = 'Mad max is 10 hours'
 
-console.log(games.details)
+// console.log(games.details)
+
+// try{
+//     games.details = 23
+// }catch(e){
+//     console.log(e.message)
+// }
