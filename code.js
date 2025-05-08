@@ -356,27 +356,35 @@ const cat = {
 
 // console.log(loweredParts)
 
-const employees = [
-    {
-        id: 1,
-        name: 'nesh'
-    },
-    {
-        id: 2,
-        name: 'pesh'
-    },
-    {
-        id: 3,
-        name: 'nkirote'
-    }
-];
+// const employees = [
+//     {
+//         id: 1,
+//         name: 'nesh'
+//     },
+//     {
+//         id: 2,
+//         name: 'pesh'
+//     },
+//     {
+//         id: 3,
+//         name: 'nkirote'
+//     }
+// ];
 
-employees.sort((a, b) => {
-    const lowerCaseA = a.name.toLowerCase()
-    const lowerCaseB = b.name.toLowerCase()
+// employees.sort((a, b) => {
+//     const lowerCaseA = a.name.toLowerCase()
+//     const lowerCaseB = b.name.toLowerCase()
 
-    if(lowerCaseA < lowerCaseB) return -1;
-    if(lowerCaseA > lowerCaseB) return 1;
-    return 0
-});
-console.log(employees)
+//     if(lowerCaseA < lowerCaseB) return -1;
+//     if(lowerCaseA > lowerCaseB) return 1;
+//     return 0
+// });
+// console.log(employees)
+
+const numbers = [2,4,6,8,10]
+
+const areAllEven = numbers.every(number => {
+    return number % 2 === 0
+})
+
+console.log(areAllEven)
