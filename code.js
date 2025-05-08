@@ -313,13 +313,19 @@ const cat = {
 
 // console.log(splicedElem)
 
-const example1 = [1,2,3]
-const example2 = [4,5,6]
+// const example1 = [1,2,3]
+// const example2 = [4,5,6]
 
-const combinedArr = example1.concat(example2)
+// // const combinedArr = example1.concat(example2)
 
-console.log(combinedArr)
+// // console.log(combinedArr)
 
-const slicedArr = combinedArr.slice(4, 5)
+// // const slicedArr = combinedArr.slice(4, 5)
 
-console.log(slicedArr)
+// // console.log(slicedArr)
+
+
+// const spreadedArr = [...example1,...example2]
+
+// console.log(spreadedArr)
+
