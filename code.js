@@ -381,10 +381,38 @@ const cat = {
 // });
 // console.log(employees)
 
-const numbers = [2,4,6,8,10]
+// const numbers = [2,4,6,8,10]
 
-const areAllEven = numbers.every(number => {
-    return number % 2 === 0
-})
+// const areAllEven = numbers.every(number => {
+//     return number % 2 === 0
+// })
 
-console.log(areAllEven)
+// console.log(areAllEven)
+
+// const numbers = [1,2,4,6,7,8,10]
+
+// const filteredNums = numbers.filter(number => number % 2 === 0)
+
+// console.log(filteredNums)
+
+const employees = [
+    {
+        id: 1,
+        name: 'nesh',
+        role: 'Dev'
+    },
+    {
+        id: 2,
+        name: 'pesh',
+        role: 'nurse'
+    },
+    {
+        id: 3,
+        name: 'nkirote',
+        role: 'Dev'
+    }
+];
+
+const Devs = employees.filter(dev => dev.role === 'Dev')
+
+console.log(Devs)
