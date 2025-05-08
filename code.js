@@ -329,12 +329,54 @@ const cat = {
 
 // console.log(spreadedArr)
 
-const numbers = [1,2,3,4,5]
+// const numbers = [1,2,3,4,5]
 
-numbers.forEach((numbers, index) => {
-    console.log(`At index: ${index} ${numbers}`)
-});
+// numbers.forEach((numbers, index) => {
+//     console.log(`At index: ${index} ${numbers}`)
+// });
 
 // for(let elements of numbers){
 //     console.log(elements)
 // }
+
+// const numbers = [1,2,3,4,5]
+
+// const joined = numbers.join(' ')
+
+// console.log(joined)
+
+
+// const fullName = 'Patience Kawira'
+
+// const loweredParts = fullName
+//         .split(' ')
+//         .reverse()
+//         .join('-')
+//         .toLowerCase()
+
+// console.log(loweredParts)
+
+const employees = [
+    {
+        id: 1,
+        name: 'nesh'
+    },
+    {
+        id: 2,
+        name: 'pesh'
+    },
+    {
+        id: 3,
+        name: 'nkirote'
+    }
+];
+
+employees.sort((a, b) => {
+    const lowerCaseA = a.name.toLowerCase()
+    const lowerCaseB = b.name.toLowerCase()
+
+    if(lowerCaseA < lowerCaseB) return -1;
+    if(lowerCaseA > lowerCaseB) return 1;
+    return 0
+});
+console.log(employees)
