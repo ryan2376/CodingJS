@@ -16,10 +16,24 @@
 
 // O(1)
 
-const numbers = [1, 2, 3, 4, 5]
+// const numbers = [1, 2, 3, 4, 5]
 
-const getNum = (arr, index) => {
-    console.log(arr[index])
+// const getNum = (arr, index) => {
+//     console.log(arr[index])
+// }
+
+// getNum(numbers, 2)
+
+// O(n^2)
+
+const findPairs = (arr) => {
+    for (i of arr){
+        for (j = i + 1; j < arr.length; j++ ){
+            console.log(`Pair: ${arr[i]}, ${arr[j]}`)
+        }
+    }
 }
 
-getNum(numbers, 2)
+const numbers = [1, 2, 3, 4, 5]
+
+findPairs(numbers)
