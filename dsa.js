@@ -26,14 +26,26 @@
 
 // O(n^2)
 
-const findPairs = (arr) => {
-    for (i of arr){
-        for (j = i + 1; j < arr.length; j++ ){
-            console.log(`Pair: ${arr[i]}, ${arr[j]}`)
-        }
+// const findPairs = (arr) => {
+//     for (i of arr){
+//         for (j = i + 1; j < arr.length; j++ ){
+//             console.log(`Pair: ${arr[i]}, ${arr[j]}`)
+//         }
+//     }
+// }
+
+// const numbers = [1, 2, 3, 4, 5]
+
+// findPairs(numbers)
+
+
+class MyArray {
+    constructor(){
+        this.length = 0;
+        this.data = {};
     }
 }
 
-const numbers = [1, 2, 3, 4, 5]
+const myNewArray = new MyArray();
 
-findPairs(numbers)
+console.log(myNewArray.push());
