@@ -60,14 +60,14 @@ class MyArray {
         return this.data[index]
     }
 
-    // pop(){
-    //     const lastItem = this.data[this.length -1] 
+    pop(){
+        const lastItem = this.data[this.length -1] 
 
-    //     delete (this.data[this.length -1] )
+        delete (this.data[this.length -1] )
 
-    //     this.length--
-    //     return lastItem
-    // }
+        this.length--
+        return lastItem
+    }
     
 }
 
