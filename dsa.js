@@ -54,11 +54,11 @@ class MyArray {
         return this.length
     }
 
-    // get(index){
-    //     // this.length = index;
+    get(index){
+        // this.length = index;
 
-    //     return this.data[index]
-    // }
+        return this.data[index]
+    }
 
     // pop(){
     //     const lastItem = this.data[this.length -1] 
