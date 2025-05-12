@@ -42,10 +42,43 @@
 class MyArray {
     constructor(){
         this.length = 0;
+
         this.data = {};
     }
+
+    push(item){
+        this.data[this.length] = item;
+
+        this.length++
+
+        return this.length
+    }
+
+    // get(index){
+    //     // this.length = index;
+
+    //     return this.data[index]
+    // }
+
+    // pop(){
+    //     const lastItem = this.data[this.length -1] 
+
+    //     delete (this.data[this.length -1] )
+
+    //     this.length--
+    //     return lastItem
+    // }
+    
 }
+
+
 
 const myNewArray = new MyArray();
 
-console.log(myNewArray.push());
+myNewArray.push('mango')
+myNewArray.push('orange')
+myNewArray.push('kiwi')
+console.log(myNewArray.pop())
+// console.log(myNewArray.get(2))
+
+console.log(myNewArray);
