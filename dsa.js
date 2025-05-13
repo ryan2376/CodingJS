@@ -68,17 +68,38 @@ class MyArray {
         this.length--
         return lastItem
     }
+
+    shift(){
+        const firstItem = this.data[0]
+
+
+// re-indexing
+        for (let i = 0; i < this.length; i++) {
+            this.data[i] = this.data[i + 1]
+        }
+
+        delete (this.data[this.length -1])
+
+
+        this.length--
+
+
+        return firstItem
+    }
     
+    deleteByIndex(i){
+        
+    }
 }
-
-
 
 const myNewArray = new MyArray();
 
 myNewArray.push('mango')
 myNewArray.push('orange')
 myNewArray.push('kiwi')
-console.log(myNewArray.pop())
+console.log(myNewArray);
+// console.log(myNewArray.pop())
+console.log(myNewArray.shift())
 // console.log(myNewArray.get(2))
 
 console.log(myNewArray);
