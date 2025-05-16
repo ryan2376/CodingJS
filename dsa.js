@@ -39,81 +39,119 @@
 // findPairs(numbers)
 
 
-class MyArray {
-    constructor() {
-        this.length = 0;
+// class MyArray {
+//     constructor() {
+//         this.length = 0;
 
-        this.data = {};
-    }
+//         this.data = {};
+//     }
 
-    push(item) {
-        this.data[this.length] = item;
+//     push(item) {
+//         this.data[this.length] = item;
 
-        this.length++
+//         this.length++
 
-        return this.length
-    }
+//         return this.length
+//     }
 
-    get(index) {
-        // this.length = index;
+//     get(index) {
+//         // this.length = index;
 
-        return this.data[index]
-    }
+//         return this.data[index]
+//     }
 
-    pop() {
-        const lastItem = this.data[this.length - 1]
+//     pop() {
+//         const lastItem = this.data[this.length - 1]
 
-        delete (this.data[this.length - 1])
+//         delete (this.data[this.length - 1])
 
-        this.length--
-        return lastItem
-    }
+//         this.length--
+//         return lastItem
+//     }
 
-    shift() {
-        const firstItem = this.data[0]
-
-
-        // re-indexing
-        for (let i = 0; i < this.length; i++) {
-            this.data[i] = this.data[i + 1]
-        }
-
-        delete (this.data[this.length - 1])
+//     shift() {
+//         const firstItem = this.data[0]
 
 
-        this.length--
+//         // re-indexing
+//         for (let i = 0; i < this.length; i++) {
+//             this.data[i] = this.data[i + 1]
+//         }
+
+//         delete (this.data[this.length - 1])
 
 
-        return firstItem
-    }
+//         this.length--
 
-    deleteByIndex(index) {
-        let deletedItem = this.data[index]
 
-        for (let i = index; i < this.length-1; i++) {
-                this.data[i] = this.data[i + 1]
-        }
+//         return firstItem
+//     }
 
-        delete (this.data[this.length -1])
+//     deleteByIndex(index) {
+//         let deletedItem = this.data[index]
+
+//         for (let i = index; i < this.length-1; i++) {
+//                 this.data[i] = this.data[i + 1]
+//         }
+
+//         delete (this.data[this.length -1])
 
         
-        this.length--
+//         this.length--
 
 
 
-        return deletedItem
-    }
+//         return deletedItem
+//     }
+// }
+
+// const myNewArray = new MyArray();
+
+// myNewArray.push('mango')
+// myNewArray.push('orange')
+// myNewArray.push('kiwi')
+// console.log(myNewArray);
+// // console.log(myNewArray.pop())
+// // console.log(myNewArray.shift())
+// console.log(myNewArray.deleteByIndex(1))
+// // console.log(myNewArray.get(2))
+
+// console.log(myNewArray);
+
+
+// let fullName = 'ryan Munene'
+
+// let reversedString = fullName.split('').reverse().join('')
+
+
+// const reversedString = (str) => {
+//     let reversedStr = str.split('').reverse().join('')
+//     return reversedStr
+// }
+
+// console.log(reversedString('Hello'))
+
+
+// const isPalindrome = (str) => {
+//     let reversedStr = str.split('').reverse().join('')
+//     if(str === reversedStr){
+//         console.log('Yes thats a Palindrome!!')
+//     }else{
+//         console.log('try another word...')
+//     }
+// }
+
+// isPalindrome('aba')
+
+// let nums = 1234
+
+// let stringified = nums.toString().split('').reverse().join('')
+// let reversed = Number(stringified)
+// console.log(reversed)
+
+const reversedints = (ints) => {
+    let reversed = ints.toString().split('').reverse().join('')
+    return parseInt(reversed) * Math.sign(ints)
 }
 
-const myNewArray = new MyArray();
-
-myNewArray.push('mango')
-myNewArray.push('orange')
-myNewArray.push('kiwi')
-console.log(myNewArray);
-// console.log(myNewArray.pop())
-// console.log(myNewArray.shift())
-console.log(myNewArray.deleteByIndex(1))
-// console.log(myNewArray.get(2))
-
-console.log(myNewArray);
+console.log(reversedints(345))
