@@ -149,9 +149,16 @@
 // let reversed = Number(stringified)
 // console.log(reversed)
 
-const reversedints = (ints) => {
-    let reversed = ints.toString().split('').reverse().join('')
-    return parseInt(reversed) * Math.sign(ints)
-}
+// const reversedints = (ints) => {
+//     let reversed = ints.toString().split('').reverse().join('')
+//     return parseInt(reversed) * Math.sign(ints)
+// }
 
-console.log(reversedints(345))
+// console.log(reversedints(345))
+
+const capitalised = (str) => {
+    const capitalisedStr = str.toUpperCase()
+    return capitalisedStr
+} 
+
+console.log(capitalised('deidein'))
